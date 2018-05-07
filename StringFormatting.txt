@@ -1,0 +1,45 @@
+# String formatting
+#### On this occasion we are going to explore the print() command, using power of 2(2^n) as example:
+
+print('2^0 = ', 2**0)
+print('2^1 = ', 2**1)
+print('2^2 = ', 2**2)
+print('2^3 = ', 2**3)
+print('2^4 = ', 2**4)
+print('2^5 = ', 2**5)
+print('2^6 = ', 2**6)
+print('2^8 = ', 2**7)
+print('2^9 = ', 2**9)
+print('2^10 = ', 2**10)
+print('2^11 = ', 2**11)
+
+#### We can number or justify the values on the right, as shown on the left side in the previous example.
+--------------------------------
+#### Now another example with a more complicated way than the one already seen.
+
+print('{0} {1}'.format('2^0 =' , 2**0))
+print('{0} {1}'.format('2^1 =' , 2**1))
+print('{0} {1}'.format('2^2 =' , 2**2))
+print('{0} {1}'.format('2^3 =' , 2**3))
+print('{0} {1}'.format('2^4 =' , 2**4))
+print('{0} {1}'.format('2^5 =' , 2**5))
+print('{0} {1}'.format('2^6 =' , 2**6))
+print('{0} {1}'.format('2^7 =' , 2**7))
+print('{0} {1}'.format('2^8 =' , 2**8))
+print('{0} {1}'.format('2^9 =' , 2**9))
+print('{0} {1}'.format('2^10 =' , 2**10))
+print('{0} {1}'.format('2^11 =' , 2**11))
+
+#### This syntax is called the replacement string, which divides into 2 parts:
+* Format strings contain replacement fields surrounded by curly braces, these contains integer numbers, known as positional parameters. We can also access parameters by name. This fields are then replaced by the arguments specified in .format() If we need to include a brace character in the literal text, its function can be canceled by typing 2 times each brace, the same logic as when we double negate a number and it becames positive.
+* .format(n0, n1, n2, ...) : this part contains the arguments that will be substituted into the formating string. The order is from left to right, strating at 0.
+
+#### A few more examples:
+print('Layer 3:({2}), Layer 2:({1}), Layer 1:({0})'.format('Physical','Data Link','Network'))
+print('{Layer1},{Layer2},{Layer3}'.format(Layer1='Physical',Layer2='Data Link',Layer3='Network'))
+
+Transport = 4
+print('Transport is the layer number {} of the 7 Layers of OSI'.format(Transport))
+
+
+
